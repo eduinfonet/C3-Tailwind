@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato&family=Lobster&family=Lobster+Two&family=Open+Sans&family=Poppins:ital,wght@0,100;0,300;0,500;0,600;1,100&family=Work+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              yellowCustom: "#FECC02",
+              black: "#131313",
+              gray: "#4e4e4e",
+            },
+            fontFamily: {
+              popins: ["Poppins", "sans-serif"],
+              lobstar: ["Lobster Two", "cursive"],
+            },
+          },
+        },
+      };
+    </script>
+    <title>TaiTailwind</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav class="bg-[#7990be]  fixed top-0 w-full z-10">
+      <div
+        class=" md:flex justify-between items-center   mx-auto "
+      >
+        <h1 class="text-4xl p-4 text-[#f0ffff]">Green Mate</h1>
+        <ul class=" md:flex p-4 text-[#f0ffff] text-lg gap-8">
+          <li>About Us</li>
+          <li>Our Product</li>
+          <li>Services</li>
+        </ul>
+      </div>
+    </nav>
+    <!-- banner -->
+    <section
+      class="w-full h-full pt-24 bg-[url('assets/img/banner.jpg')] bg-cover "
+    >
+      <div class="h-full w-full md:max-w-sm flex md:mx-20 items-center ">
+        <div>
+          <h1 class="text-white text-2xl">Move Production Studio</h1>
+          <h1 class="text-white text-7xl font-bold max-[320px]:text-2xl max-[640px]:text-4xl">
+            FILMS MADE TO <br />
+            <span class="text-orange-400">PERFECTION</span>
+          </h1>
+          <p class="font-lobstar text-white text-2xl  max-[320px] ">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio,
+            recusandae! Totam temporibus doloremque suscipit aliquid cupiditate
+          </p>
+          <button
+            class="border-2  py-2 px-2 my-4 text-lg text-orange-400 bg-white  border-orange-400 hover:text-white hover:bg-orange-500 hover:border-white hover:border-4 transition-all" 
+          >
+            Discover More
+          </button>
+        </div> 
+    </section>
+    <!-- about us -->
+    <section class="py-40">
+      <div class="border-2 md:p-5  w-full  max-w-7xl mx-auto ">
+<div class="md:flex ">
+  <div class="md:mx-0 w-full h-[550px] md:w-1/2  ">
+    <div class="  h-[500px] bg-[url('assets/img/camera-man.jpg')] bg-cover origin-center bg-center">
+
+  </div>
+  <h1 class="uppercase text-black  py-3 bg-slate-100  w-2/3   -mt-7 mx-[100px] font-bold text-center drop-shadow-[0_10px_10px_rgb(0,10,10)] ">20 Years of EXPERIENCE</h1> 
+ </div>
+  <div class="w-full md:w-1/2 p-5 flex flex-col justify-center ">
+<h2 class="text-lg">About Us</h2>
+<p class="text-5xl font-bold">FILMING EXPERIENCE <br> <span>JUST GO BETTER</span> </p>
+<p class="mx-auto w-full text-center  ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas sed animi aliquid repudiandae blanditiis deserunt architecto adipisci saepe consequatur voluptatem neque cupiditate iure enim vel, doloribus eos provident rerum quae?</p>
+ <button
+            class="border-2  py-2 px-2 my-4 text-lg w-2/5 text-orange-400 bg-white  border-orange-400 hover:text-white hover:bg-orange-500 hover:border-white hover:border-4 transition-all" 
+          >
+            Discover More
+          </button>
+  </div>
+</div>
+      </div>
+    </section>
+  </body>
+  <script src="assets/js/script.js"></script>
+</html>
