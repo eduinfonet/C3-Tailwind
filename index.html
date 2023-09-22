@@ -10,6 +10,7 @@
       rel="stylesheet"
     />
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="assets/css/style.css" />
 
     <script>
       tailwind.config = {
@@ -33,12 +34,10 @@
   </head>
   <body>
     <!-- navbar -->
-    <nav class="bg-[#7990be]  fixed top-0 w-full z-10">
-      <div
-        class=" md:flex justify-between items-center   mx-auto "
-      >
+    <nav class="bg-[#7990be] top-0 w-full">
+      <div class="md:flex justify-between items-center mx-auto">
         <h1 class="text-4xl p-4 text-[#f0ffff]">Green Mate</h1>
-        <ul class=" md:flex p-4 text-[#f0ffff] text-lg gap-8">
+        <ul class="md:flex p-4 text-[#f0ffff] text-lg gap-8">
           <li>About Us</li>
           <li>Our Product</li>
           <li>Services</li>
@@ -47,12 +46,13 @@
     </nav>
     <!-- banner -->
     <section
-      class="w-full h-full pt-24 bg-[url('assets/img/banner.jpg')] bg-cover "
+      class="w-full h-screen pt-24 bg-[url('assets/img/banner.jpg')] bg-cover "
     >
       <div class="h-full w-full md:max-w-sm flex md:mx-20 items-center ">
         <div>
           <h1 class="text-white text-2xl">Move Production Studio</h1>
-          <h1 class="text-white text-7xl font-bold max-[320px]:text-2xl max-[640px]:text-4xl">
+          <h1 class="text-white text-7xl font-bold 
+          ">
             FILMS MADE TO <br />
             <span class="text-orange-400">PERFECTION</span>
           </h1>
@@ -60,34 +60,61 @@
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio,
             recusandae! Totam temporibus doloremque suscipit aliquid cupiditate
           </p>
-          <button
-            class="border-2  py-2 px-2 my-4 text-lg text-orange-400 bg-white  border-orange-400 hover:text-white hover:bg-orange-500 hover:border-white hover:border-4 transition-all" 
-          >
-            Discover More
-          </button>
+         
         </div> 
-    </section>
+    </section> 
     <!-- about us -->
-    <section class="py-40">
-      <div class="border-2 md:p-5  w-full  max-w-7xl mx-auto ">
-<div class="md:flex ">
-  <div class="md:mx-0 w-full h-[550px] md:w-1/2  ">
-    <div class="  h-[500px] bg-[url('assets/img/camera-man.jpg')] bg-cover origin-center bg-center">
+   
 
-  </div>
-  <h1 class="uppercase text-black  py-3 bg-slate-100  w-2/3   -mt-7 mx-[100px] font-bold text-center drop-shadow-[0_10px_10px_rgb(0,10,10)] ">20 Years of EXPERIENCE</h1> 
- </div>
-  <div class="w-full md:w-1/2 p-5 flex flex-col justify-center ">
-<h2 class="text-lg">About Us</h2>
-<p class="text-5xl font-bold">FILMING EXPERIENCE <br> <span>JUST GO BETTER</span> </p>
-<p class="mx-auto w-full text-center  ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas sed animi aliquid repudiandae blanditiis deserunt architecto adipisci saepe consequatur voluptatem neque cupiditate iure enim vel, doloribus eos provident rerum quae?</p>
- <button
-            class="border-2  py-2 px-2 my-4 text-lg w-2/5 text-orange-400 bg-white  border-orange-400 hover:text-white hover:bg-orange-500 hover:border-white hover:border-4 transition-all" 
-          >
-            Discover More
-          </button>
-  </div>
-</div>
+    <section class="py-40 h-screen">
+      <div class="border-2 md:p-5 w-full max-w-7xl mx-auto">
+        <div class="md:flex">
+          <div class="md:mx-0 w-full h-[550px] md:w-1/2">
+            <div
+              class="h-[500px] bg-[url('assets/img/camera-man.jpg')] bg-cover origin-center bg-center"
+            ></div>
+            <h1
+              class="uppercase text-black py-3 bg-slate-100 w-2/3 -mt-7 mx-[100px] font-bold text-center drop-shadow-[0_10px_10px_rgb(0,10,10)]"
+            >
+              20 Years of EXPERIENCE
+            </h1>
+          </div>
+          <div class="w-full md:w-1/2 p-5 flex flex-col justify-center">
+            <h2 class="text-lg">About Us</h2>
+            <p class="text-5xl font-bold">
+              FILMING EXPERIENCE <br />
+              <span>JUST GO BETTER</span>
+            </p>
+            <p class="mx-auto w-full text-center">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas
+              sed animi aliquid repudiandae blanditiis deserunt architecto
+              adipisci saepe consequatur voluptatem neque cupiditate iure enim
+              vel, doloribus eos provident rerum quae?
+            </p>
+            <button
+              class="border-2 py-2 px-2 my-4 text-lg w-2/5 text-orange-400 bg-white border-orange-400 hover:text-white hover:bg-orange-500 hover:border-white hover:border-4 transition-all"
+            >
+              Discover More
+            </button>
+          </div>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 p-5 gap-5">
+          <div>
+            <div class="bg-black h-1.5 w-full m-2"></div>
+            <h1 class="text-6xl">Our Vision</h1>
+            <p class="text-lg" >Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia provident dolores iste eos ipsam, distinctio, </p>
+          </div>
+          <div>
+            <div class="bg-black h-1.5 w-full m-2"></div>
+            <h1 class="text-6xl">Our Mission</h1>
+            <p class="text-lg">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia provident dolores iste eos ipsam, distinctio, </p>
+          </div>
+          <div>
+            <div class="bg-black h-1.5 w-full m-2"></div>
+            <h1 class="text-6xl">Our Motto</h1>
+            <p class="text-lg">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia provident dolores iste eos ipsam, distinctio, </p>
+          </div>
+        </div>
       </div>
     </section>
   </body>
